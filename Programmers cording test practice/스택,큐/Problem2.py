@@ -12,4 +12,5 @@ def solution(bridge_length, weight, truck_weights):
             weight -= truck_weights[0]
             truck = truck_weights.pop(0)
             bridge_truck.append([truck,0])
+            
     return answer
