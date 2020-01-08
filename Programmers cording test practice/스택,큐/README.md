@@ -11,3 +11,7 @@
 ----------
 ## 문제4 : 프린터
 ##### <https://programmers.co.kr/learn/courses/30/lessons/42587>
+----------
+## 문제5 : 쇠막대기
+##### <https://programmers.co.kr/learn/courses/30/lessons/42585>
+----------
