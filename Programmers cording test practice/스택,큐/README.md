@@ -15,3 +15,5 @@
 ## 문제5 : 쇠막대기
 ##### <https://programmers.co.kr/learn/courses/30/lessons/42585>
 ----------
+## 문제6 : 주식가격
+##### <https://programmers.co.kr/learn/courses/30/lessons/42584>
