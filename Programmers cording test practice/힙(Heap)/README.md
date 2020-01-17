@@ -6,4 +6,3 @@
 ## 문제2 : 라면공장
 ##### <https://programmers.co.kr/learn/courses/30/lessons/42629>
 ----------
-
