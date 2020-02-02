@@ -1,4 +1,4 @@
-# Practice
+# Cording Practice
 ----------
 ## 목표
 ##### 1. 알고리즘 공부
