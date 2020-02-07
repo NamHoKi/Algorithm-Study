@@ -9,3 +9,6 @@
 ## 문제3: 단어 변환
 ##### <https://programmers.co.kr/learn/courses/30/lessons/43163>
 ----------
+## 문제4: 여행 경로
+##### <https://programmers.co.kr/learn/courses/30/lessons/43164>
+----------
