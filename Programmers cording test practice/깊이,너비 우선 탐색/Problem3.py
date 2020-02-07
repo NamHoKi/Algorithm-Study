@@ -25,3 +25,5 @@ def solution(begin, target, words):
         if result[i] > 0:
             return result[i]
     return 0
+
+## 시간 복잡도 줄여야함
