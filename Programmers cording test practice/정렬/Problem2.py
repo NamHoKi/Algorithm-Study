@@ -1,4 +1,4 @@
-## 다른사람 풀이
+## 다른사람 풀이 (좋은 아이디어라서 가져옴)
 
 def solution(numbers):
     numbers = list(map(str, numbers))
