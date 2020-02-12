@@ -6,6 +6,5 @@
 ## 문제2: 가장 큰 수
 ##### <https://programmers.co.kr/learn/courses/30/lessons/42746>
 ----------
-## 문제3:
-######
-----------
+## 문제3: H-Index
+###### <https://programmers.co.kr/learn/courses/30/lessons/42747>
