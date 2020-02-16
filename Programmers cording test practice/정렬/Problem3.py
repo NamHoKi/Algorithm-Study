@@ -3,4 +3,5 @@ def solution(citations):
     count, h_index , n = 0, 0, len(citations)    
     for c in citations:
         
+        
     return h_index
