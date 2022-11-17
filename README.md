@@ -1,8 +1,9 @@
-# Issues
+# <1> Issues
 ## 코딩하면서 생긴 오류 정리
+
 <hr>
 
-# for coding test
+# <2> for coding test
 ## 코딩테스트 연습
 ----------
 ## 목표
