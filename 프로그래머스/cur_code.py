@@ -1,34 +1,20 @@
-class node():
-    def __init__(self, n):
-        self.n = n
-        self.left = None
-        self.right = None
+from itertools import permutations
+import math
 
-def create_tree(triangle):
-    head_node = node(triangle[0][0])
-    if len(triangle) == 1:
-        pass
-    else:
-        for i in range(0, len(triangle) - 1):
-            for j in range(len(triangle[i])):
-                if i == 0:
-                    cur_node = head_node
-                else:
-                    cur_node = node(triangle[i][j])
-                cur_node.left = node(triangle[i + 1][j])
-                cur_node.right = node(triangle[i + 1][j + 1])
-    return head_node
+def is_prime_number(x):
+    for i in range(2, int(math.sqrt(x)) + 1):
+        if x % i == 0:
+            return False
+    return True
 
-def DFS(node, sum):
-    print(node.n)
-    if node.left == None:
-        return sum
-    else:
-        if DFS(node.left, sum) + sum >= DFS(node.right, sum) + sum:
-            return left + sum
-        return right + sum
-    
-    
-def solution(triangle):
-    head_node = create_tree(triangle)
-    return DFS(head_node, 0)
+def solution(numbers):
+    answer = 0
+    permutations_list = list(permutations(list(numbers), len(numbers)))
+    num_list = []
+    for t in permutations_list:
+        num_list.append(int(''.join(list(t))))
+    num_list = set(num_list)
+    for number in numbers:
+        if is_prime_number(int(number)): answer += 1
+
+    return answer
