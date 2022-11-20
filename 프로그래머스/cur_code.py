@@ -23,4 +23,4 @@ def solution(numbers):
         answer += is_prime_number(int(number))
 
     return answer
-    
+   
