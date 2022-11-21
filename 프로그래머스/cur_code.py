@@ -1,3 +1,8 @@
+'''
+테스트 케이스 만족이 안되는데 이유를 찾는 중 ..
+'''
+
+
 from itertools import permutations
 import math
 
