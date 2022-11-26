@@ -31,3 +31,13 @@ def solution(numbers):
    
 
     
+    
+def solution(k, tangerine):
+    tangerine.sort()
+    tangerine_set = set(tangerine)
+    count_dic, cur_index, k_cnt = {}, 0, 0
+    for i in range(len(tangerine_set)):
+        count_dic[t] = tangerine.index()
+    
+    answer = 0
+    return answer
