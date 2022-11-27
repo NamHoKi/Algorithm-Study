@@ -1,15 +1,3 @@
-# Issues
-## 코딩하면서 생긴 오류 정리
-
-<hr>
-
-# 목표
-##### - 알고리즘 공부
-##### - 이전 코드 개선
-##### - 참고용
-
-<hr>
-
 # Use Code
 
 1. 하나의 리스트에서 모든 조합을 구하기
@@ -40,5 +28,27 @@ def is_prime_number(x):
       if x % i == 0:
           return False
   return True
+```
+
+4. Python 딕셔너리 정렬
+```
+# key 기준 정렬 후, key list 반환
+dic = sorted(dic, reverse=True) # 내림차순
+```
+
+```
+# key 값을 기준으로 정렬된 (key,value) 원소쌍을 가진 리스트 출력 
+print(sorted(dic.items()))
+```
+
+```
+# value 값을 기준으로 오름차순 정렬하여 (k, v) 리스트 반환
+print(sorted(dic.items(), key=lambda x:x[1]))
+
+# 위 값을 딕셔너리로 변환
+print(dict(sorted(dic.items(), key=lambda x:x[1])))
+
+# value 값을 기준으로 오름차순 정렬
+print(sorted(dic,key=lambda x:dic[x]))
 ```
 
