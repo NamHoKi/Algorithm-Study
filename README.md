@@ -76,3 +76,7 @@ Counter({'hi': 3, 'hey': 2, 'hello': 1})
 >>> Counter("hello world")
 Counter({'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
 ```
+
+<hr>
+
+## 6. 완전탐색
