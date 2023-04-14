@@ -100,3 +100,21 @@ Counter({'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1})
 <hr>
 
 ## 9. math
+
+```
+1. factorial(x) => x의 팩토리얼 값 출력
+
+2. sqrt(x) => x의 제곱근 출력
+
+3. gcd(a,b) => a 와 b의 최대공약수 출력
+
+4. 상수 pi , e => 파이와 자연상수 출력
+
+import math
+
+print(math.factorial(5))   # 120
+print(math.sqrt(7))        # 2.6457513110645907
+print(math.gcd(21,14))   # 7
+print(math.pi)              # 3.14159....93
+print(math.e)               # 2.71828......45
+```
