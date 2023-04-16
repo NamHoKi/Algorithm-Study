@@ -121,25 +121,3 @@ print(math.e)               # 2.71828......45
 
 
 ##
-
-```
-def solution(sizes):
-    W, H = 0, 0
-    for w, h in sizes :
-        if W < w or H < h:
-            ww, hh = max(W, w), max(H, h)
-            aa = ww * hh
-        w, h = h, w
-        if W < w or H < h:
-            www, hhh = max(W, w, ww), max(H, h, hh)
-            aaa = www * hhh
-        
-        if aa <= aaa :
-            W, H = ww, hh
-        else :
-            W, H = www, hhh
-            
-        print(W, H)
-    
-    return W*H
-```
