@@ -6,6 +6,7 @@
 
 <hr>
 https://school.programmers.co.kr/learn/courses/30/lessons/1844
+
 제출했을 때, 실패 (signal: aborted (core dumped)) 오류 ?
 ```
 def dfs(maps, x, y, count) :
