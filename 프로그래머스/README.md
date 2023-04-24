@@ -5,32 +5,32 @@
 #### 백준허브 사용법 : [링크](https://velog.io/@flaxinger/%EB%B0%B1%EC%A4%80%ED%97%88%EB%B8%8C-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95)
 
 <hr>
+https://school.programmers.co.kr/learn/courses/30/lessons/1844
+제출했을 때, 실패 (signal: aborted (core dumped)) 오류 ?
+```
+def dfs(maps, x, y, count) :
+    global answer
+    try :
+        if maps[x][y] == 0 :
+            return
+    except Exception as e :
+        return
+    
+    if x == len(maps) - 1 and y == len(maps) - 1 :
+        if answer == -1 :
+            answer = count
+        else :
+            answer = min(answer, count)
+        return
+    
+    maps[x][y] = 0
+    for ox, oy in [[1,0], [0,1], [0,-1], [-1,0]] :
+        dfs(maps, x + ox, y + oy, count + 1)
+        
 
-def solution(n, computers):
-    visited = [False for i in range(n)]
-    answer , q = 0, []
-        
-    for i in range(n) :                 # 모든 node를 방문했는지 체크
-        start_node = computers[i][:]
-        
-        if visited[i] == False :
-            visited[i] = True           # 첫 스타팅 포인트로 방문은 answer += 1
-            answer += 1
-        
-        for j in range(n) :             # 현재 노드에서 방문할 수 있는 노드 q에 추가, FIFO
-            if start_node[j] == 1 :
-                q.append(j)
-        
-        while q != [] :
-            if len(set(visited)) == 1 : # 모든 노드를 방문 했다면
-                return answer           # 종료
-            f = q.pop(0)                # FIFO
-            if visited[f] :             # 이미 방문한 곳이라면
-                continue                # 무시
-            else :                      # 처음 방문하는 곳이라면
-                visited[f] = True               # 방문 체크
-                for j in range(n) :             # 이어서 방문할 수 있는 곳 추가
-                    if computers[f][j] == 1 :
-                        q.append(j)
-        
+def solution(maps):
+    global answer
+    answer = -1
+    dfs(maps, 0, 0, 1)
     return answer
+ ```
