@@ -35,3 +35,8 @@ def solution(maps):
     dfs(maps, 0, 0, 1)
     return answer
  ```
+ 
+ 
+ 
+ 
+ 안전지대 (lv0) 테스트케이스 하나 불만족
