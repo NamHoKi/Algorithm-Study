@@ -40,3 +40,5 @@ def solution(maps):
  
  
  안전지대 (lv0) 테스트케이스 하나 불만족
+https://school.programmers.co.kr/learn/courses/30/lessons/120866
+
