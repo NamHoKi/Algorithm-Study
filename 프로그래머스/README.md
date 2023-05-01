@@ -41,4 +41,4 @@ def solution(maps):
  
  안전지대 (lv0) 테스트케이스 하나 불만족
 https://school.programmers.co.kr/learn/courses/30/lessons/120866
-
+0이면 주위 8방향1인지 체크,
