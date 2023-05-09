@@ -42,23 +42,3 @@ def solution(maps):
  안전지대 (lv0) 테스트케이스 하나 불만족
 https://school.programmers.co.kr/learn/courses/30/lessons/120866
 0이면 주위 8방향1인지 체크,
-
-
-https://school.programmers.co.kr/learn/courses/30/lessons/120956
-```
-def solution(babbling):
-    answer = 0
-    aa = ["aya", "ye", "woo", "ma"]
-    
-    for b in babbling :
-        for a in aa :
-            print(a, b)
-            if a in b :
-                b.replace(a, '')
-            print(b)
-            if b == '' :
-                answer += 1
-                break
-        
-    return answer
-```
