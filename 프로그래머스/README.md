@@ -5,6 +5,8 @@
 #### 백준허브 사용법 : [링크](https://velog.io/@flaxinger/%EB%B0%B1%EC%A4%80%ED%97%88%EB%B8%8C-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95)
 
 <hr>
+# 미해결 문제
+
 https://school.programmers.co.kr/learn/courses/30/lessons/1844
 
 제출했을 때, 실패 (signal: aborted (core dumped)) 오류 ?
@@ -37,7 +39,7 @@ def solution(maps):
  ```
  
  
- 
+
  
  안전지대 (lv0) 테스트케이스 하나 불만족
 https://school.programmers.co.kr/learn/courses/30/lessons/120866
@@ -69,4 +71,29 @@ def solution(number, k):
                     return ''.join(number)
             i += 1
         del_number += 1
+```
+
+
+https://school.programmers.co.kr/learn/courses/30/lessons/181832
+```
+def solution(n):
+    answer = [[0]*n for i in range(n)]
+    answer[0][0] = 1
+    offsets = [[0, 1], [1, 0], [0, -1], [-1, 0]]
+    x, y, i = 0, 0, 2
+    while i < n*n + 1 :
+        x += offsets[0][0]
+        y += offsets[0][1]
+        
+        if 0 <= x < n and 0 <= y < n :  # out of index 가 아닐 때,
+            if answer[x][y] == 0 :      # 처음 온 곳이라면,
+                answer[x][y] = i
+                i += 1
+        else :                          # out of index 일 때, offsets 순환큐
+            x -= offsets[0][0]
+            y -= offsets[0][1]
+            o = offsets.pop(0)
+            offsets.append(o)
+
+    return answer
 ```
