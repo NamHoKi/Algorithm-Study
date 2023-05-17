@@ -72,3 +72,17 @@ def solution(number, k):
             i += 1
         del_number += 1
 ```
+
+
+https://school.programmers.co.kr/learn/courses/30/lessons/42860
+```
+def solution(name):
+    answer = 0
+    for c in name :
+        t = min([ord(c) - ord('A'), (ord('Z') - ord(c)) + 1])
+        print(c, t)
+        answer += t + 1
+    if len(name) > 1 :
+        return answer - 1
+    return answer 
+```
