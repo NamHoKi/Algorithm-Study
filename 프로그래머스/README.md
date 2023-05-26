@@ -39,7 +39,28 @@ def solution(maps):
  ```
  
  
+ https://school.programmers.co.kr/learn/courses/30/lessons/120907
+ 테스트케이스 
+ ```
+def solution(quiz):
+    answer = []
+    for q in quiz :
+        left, right = q.split('=')
+        if '+' in left :
+            a, b = left.split('+')
+            if int(a) + int(b) == int(right) :
+                answer.append('O')
+            else :
+                answer.append('X')
+        else :
+            a, b = left.split('-')
+            if int(a) - int(b) == int(right) :
+                answer.append('O')
+            else :
+                answer.append('X')
 
+    return answer
+   ```
  
  안전지대 (lv0) 테스트케이스 하나 불만족
 https://school.programmers.co.kr/learn/courses/30/lessons/120866
