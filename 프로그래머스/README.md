@@ -107,3 +107,37 @@ def solution(name):
         return answer - 1
     return answer 
 ```
+
+
+https://school.programmers.co.kr/learn/courses/30/lessons/120880
+- n_index의 조건이 
+```
+def solution(numlist, n):
+    numlist.append(n)
+    numlist.sort()
+    answer = []
+    
+    n_index = numlist.index(n)
+    down_index, up_index = 1, 1
+    while True :
+        try :
+            up = numlist[n_index + up_index]
+        except Exception as e :
+            answer.extend(numlist[-1:n_index:-1])
+            break
+
+        try :
+            down = numlist[n_index - down_index]
+        except Exception as e :
+            answer.extend(numlist[n_index + up_index:])
+            break
+
+        if n - down <= up - n :
+            answer.append(up)
+            up_index += 1
+        else :
+            answer.append(down)
+            down_index += 1
+    
+    return answer
+```
