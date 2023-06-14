@@ -1,7 +1,6 @@
 # Use Code
 https://uni2237.tistory.com/56
 
-
 <hr>
 
 ## Step 1.
@@ -142,6 +141,30 @@ a = ord('A')
 a = chr(a)
 ```
 
+
+## 11. 진법변환
+
+```
+# n진수 -> 10진수 : int(string, base)
+print(int('111',2)) # 7
+print(int('222',3)) # 26
+print(int('333',4)) # 63
+print(int('444',5)) # 124
+print(int('555',6)) # 215
+print(int('FFF',16))# 4095
+
+```
+
+
+```
+# 10진수 -> 2, 8, 16 진수
+print(bin(10))  # 0b1010
+print(oct(10))  # 0o12
+print(hex(10))  # 0xa
+
+# return type : String -> [2:] 슬라이싱으로 진법을 지우고 사용 가능
+
+```
 
 
 ## Memo
